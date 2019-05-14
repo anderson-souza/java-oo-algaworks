@@ -46,6 +46,18 @@ public class ContaReceber extends Conta {
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+	@Override
+	public void exibirDetalhes() {
+		System.out.println("Detalhamento da Conta a Receber");
+		System.out.println("Fornecedor: " + getCliente().getNome());
+		System.out.println("Descrição: " + getDescricao());
+		System.out.println("Valor: " + getValor());
+		System.out.println("Data de Vencimento: " + getDataVencimento());
+		System.out.println("Situação da conta: " + getSituacaoConta());
+		System.out.println();
+		
 	}	
 	
 }

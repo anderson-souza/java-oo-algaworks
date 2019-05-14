@@ -1,9 +1,9 @@
 package com.algaworks.cursojava.financeiro.modelo;
 
-public class Pessoa {
+public abstract class Pessoa {
 
 	private String nome;
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -12,5 +12,4 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	
 }

@@ -37,6 +37,17 @@ public class ContaPagar extends Conta {
 
 	public void setFornecedor(Fornecedor fornecedor) {
 		this.fornecedor = fornecedor;
+	}
+
+	@Override
+	public void exibirDetalhes() {
+		System.out.println("Detalhamento da Conta a Pagar");
+		System.out.println("Fornecedor: " + getFornecedor().getNome());
+		System.out.println("Descrição: " + getDescricao());
+		System.out.println("Valor: " + getValor());
+		System.out.println("Data de Vencimento: " + getDataVencimento());
+		System.out.println("Situação da conta: " + getSituacaoConta());
+		System.out.println();
 	}	
 
 }
