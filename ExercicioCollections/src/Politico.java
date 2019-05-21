@@ -1,3 +1,4 @@
+
 public class Politico {
 
 	private String nome;

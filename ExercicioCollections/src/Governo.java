@@ -1,3 +1,5 @@
+
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +22,7 @@ public class Governo {
 		// se não existir uma lista de políticos para o partido informado,
 		// devemos instanciar uma nova lista (pois é a primeira inclusão neste partido)
 		if (politicos == null) {
-			politicos = new ArrayList();
+			politicos = new ArrayList<Politico>();
 		}
 
 		// adiciona o político recebido como parâmetro à lista de políticos

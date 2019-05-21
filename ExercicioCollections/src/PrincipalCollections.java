@@ -1,7 +1,8 @@
+
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
-public class Principal {
+public class PrincipalCollections {
 
 	public static void main(String[] args) {
 		DecimalFormat formatador = new DecimalFormat("R$ #,##0.00");
