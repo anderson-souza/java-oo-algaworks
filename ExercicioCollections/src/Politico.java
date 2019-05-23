@@ -1,4 +1,9 @@
-
+/**
+ * Model de Politico
+ * 
+ * @author ander
+ * 
+ */
 public class Politico {
 
 	private String nome;

@@ -2,8 +2,21 @@
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
+/**
+ * Classe principal para executar o exercicio sobre collections. Essa classe
+ * cria manualmente alguns Cargos, Governos e Politicos. No final, executa os
+ * processos criados na classe Governo.
+ * 
+ * @author ander
+ *
+ */
 public class PrincipalCollections {
 
+	/**
+	 * Classe main responsável por executar a aplicação.
+	 * 
+	 * @param args Argumentos de inicialização.
+	 */
 	public static void main(String[] args) {
 		DecimalFormat formatador = new DecimalFormat("R$ #,##0.00");
 

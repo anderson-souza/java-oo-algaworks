@@ -1,11 +1,17 @@
 
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Classe Governo utilizada para processar informações sobre os Politicos e
+ * Cargos.
+ * 
+ * @author ander
+ *
+ */
 public class Governo {
 
 	// armazena uma lista de políticos por estado da federação
@@ -15,6 +21,14 @@ public class Governo {
 		this.partidosPoliticos = new HashMap<>();
 	}
 
+	/**
+	 * Esta classe adiciona um Politico em um Partido, para operações futuras
+	 * 
+	 * @param partidoPolitico Partido politico utilizado para executar os
+	 *                        processamentos.
+	 * @param politico        Politico utilizado para executar os processamentos
+	 * @return void
+	 */
 	public void adicionarPolitico(String partidoPolitico, Politico politico) {
 		// recupera a lista de políticos para um partido
 		List<Politico> politicos = this.partidosPoliticos.get(partidoPolitico);
@@ -33,6 +47,14 @@ public class Governo {
 		this.partidosPoliticos.put(partidoPolitico, politicos);
 	}
 
+	/**
+	 * Este método Calcula todos os gastos com salário de um determinado Partido
+	 * Politico.
+	 * 
+	 * @param partidoPolitico Partido Politico para ser cálculado
+	 * @return Valor total dos gastos com os salários do partido informado no
+	 *         parâmetro em formato BigDecimal
+	 */
 	public BigDecimal calcularGastosComSalario(String partidoPolitico) {
 		// implementar busca de políticos para o partido informado
 		// e cálculo dos salários
@@ -47,6 +69,14 @@ public class Governo {
 
 	}
 
+	/**
+	 * Método que calcula os gastos com salário de um Partido baseando-se no Cargo
+	 * informado
+	 * 
+	 * @param cargo           Cargo a ser utilizado para o cálculo
+	 * @param partidoPolitico Partido Politico para verificar os gastos
+	 * @return Valor total dos gastos do Partido no cargo informado
+	 */
 	public BigDecimal calcularGastosComSalarioParaCargo(Cargo cargo, String partidoPolitico) {
 		// implementar busca dos políticos para o partido e cargo informados
 		// e cálculo dos salários
